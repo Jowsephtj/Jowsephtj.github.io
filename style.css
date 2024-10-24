@@ -1,6 +1,6 @@
 body {
     background-color: #0000AA;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "jura";
     font-weight: bold;
     color: white;
     padding-left: 100px;
@@ -10,7 +10,47 @@ body {
 
 }
 
-/* typography */
+@font-face {
+    src: url("fonts/juraregular.woff");
+    font-family: "jura";
+}
+
+@keyframes coloreffect {
+    0% {
+        color:red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: lime;
+    }
+}
+
+@keyframes moveright {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50%;
+    }
+}
+
+
+img {
+    width: 100%;
+}
+
+video {
+width: 100%;
+}
+
+/* TYPOGRAPHY */
+/* TYPOGRAPHY */
+
+div.vw {
+    font-size: vw10;
+}
 
 div.largetext {
     font-size: 128px;
@@ -18,10 +58,16 @@ div.largetext {
 }
 
 div.mediumtext {
-    font-size:24px;
+    font-size: 24px;
 }
 
-/* colour */
+div.sans {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* COLOUR */
+/* COLOUR */
 
 div.bluetext {
     color: #0000AA;
@@ -35,30 +81,122 @@ div.whitebg {
     color: #FFFFFF;
 }
 
-/* layout */
+
+/* LAYOUT */
+/* LAYOUT */
+
 div.pb50 {
-    padding-bottom:50px;
+    padding-bottom: 50px;
 }
 
 div.pb100 {
     padding-bottom: 100px;
 }
 
+div.plauto {
+    padding-left: auto;
+}
+
+div.mb50 {
+    margin-bottom: 50px;
+}
+
+div.mb100 {
+    margin-bottom: 100px;
+}
+
+div.mr100 {
+    margin-right: 100px;
+}
+
 div.textright {
     text-align: right;
 }
 
-/* grid */
+
+/* GRID */
+/* GRID */
+
+div.width25 {
+    width: 25%;
+}
+
+div.width33 {
+    width: 33.3333%;
+}
 
 div.width50 {
-    width:50%;
+    width: 50%;
 }
 
-div.width33{
-    width: 33.333%;
-}
-
-div.width66{
+div.width66 {
     width: 66.6666%;
 }
 
+div.width75 {
+    width: 75%;
+}
+
+div.width100 {
+    width: 100%;
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Background */
+/* Background */
+
+div.banner {
+    background-image: url(Images/radar.png) ;
+    background-color: #FF0000;
+    background-position: ;
+    background-repeat: ;
+    height :400px;
+}
+
+div.nav {
+    position: fixed;
+    left:5px;
+    top:5px;
+    z-index:-1;
+}
+/* - negative to bring back, bigger number to place in front */
+
+
+/* ANIMATION */
+
+div.move {
+    animation:moveright 5s infinite alternate linear;
+}
+
+div.coloreffect {
+    animation: coloreffect 2s infinite linear;
+}
+
+/* numbers */
+
+div.numbers {
+    display :flex;
+    flex-wrap :wrap;
+    width: 100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 2;
+}
+
+div.number {
+    margin-top: 30px;
+    width: 25%;
+    color: #FFFFFF;
+}
+
+div.minimap {
+    width:15%;
+    position: fixed;
+    bottom:10px;
+    right:10px;
+}

@@ -1,0 +1,264 @@
+body {
+    background-color: #0000AA;
+    font-family: "jura";
+    font-weight: bold;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+
+/* IMAGES */
+/* IMAGES */
+
+img {
+    width: 100%;
+}
+
+/* VIDEO */
+/* VIDEO */
+
+video {
+width: 100%;
+}
+
+/* COLOUR */
+/* COLOUR */
+
+div.bluetext {
+    color: #0000AA;
+}
+
+div.redtext {
+    color: #FF0000;
+}
+
+div.whitebg {
+    color: #FFFFFF;
+}
+
+/* TYPOGRAPHY */
+/* TYPOGRAPHY */
+
+@font-face {
+    src: url("fonts/juraregular.woff");
+    font-family: "jura";
+}
+
+div.vw {
+    font-size: vw10;
+}
+
+div.largetext {
+    font-size: 128px;
+    line-height: 120px;
+}
+
+div.mediumtext {
+    font-size: 24px;
+}
+
+div.sans {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PARAGRAPH */
+/* PARAGRAPH */
+
+/* padding */
+div.pb50 {
+    padding-bottom: 50px;
+}
+
+div.pb100 {
+    padding-bottom: 100px;
+}
+
+div.plauto {
+    padding-left: auto;
+}
+
+/* margin */
+div.mb50 {
+    margin-bottom: 50px;
+}
+
+div.mb100 {
+    margin-bottom: 100px;
+}
+
+div.mr100 {
+    margin-right: 100px;
+}
+
+div.mm {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.mr {
+    margin-right:auto;
+}
+
+div.ml {
+    margin-left:auto;
+}
+
+div.ml1 {
+    margin-left:16.6666667%;
+}
+
+div.ml2 {
+    margin-left:33.3333333%;
+}
+
+div.ml3 {
+    margin-left:50%;
+}
+
+div.ml4 {
+    margin-left:66.6666667%;
+}
+
+/* text align */
+div.textright {
+    text-align: right;
+}
+
+/* width */
+div.width1 {
+    width: 16.6666667%;
+}
+
+div.width2 {
+    width: 33.3333333%;
+}
+
+div.width3 {
+    width: 50%;
+}
+
+div.width4 {
+    width: 66.6666667%;
+}
+
+div.width5 {
+    width: 83.3333334%;
+}
+
+div.width6 {
+    width: 100%;
+}
+
+/* container */
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Background */
+/* Background */
+
+div.banner {
+    background-image: url(Images/radar.png) ;
+    background-color: #FF0000;
+    background-position: ;
+    background-repeat: ;
+    height :400px;
+}
+
+div.nav {
+    position: fixed;
+    left:5px;
+    top:5px;
+    z-index:-1;
+}
+/* - negative to bring back, bigger number to place in front (z-index (arange)) */
+
+
+/* ANIMATION */
+/* ANIMATION */
+
+@keyframes coloreffect {
+    0% {
+        color:red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: lime;
+    }
+}
+
+div.coloreffect {
+    animation: coloreffect 2s infinite linear;
+}
+
+@keyframes moveleft {
+    0% {
+        margin-left: 50%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+
+div.moveleft {
+    animation:moveleft 5s alternate linear;
+}
+
+@keyframes moveright {
+    0% {
+        margin-right:100%;
+    }
+    100% {
+        margin-right:0%;
+    }
+}
+
+div.moveright {
+    animation:moveright 5s alternate linear ;
+}
+
+/* NUMBERS */
+/* NUMBERS */
+
+div.numbers {
+    display :flex;
+    flex-wrap :wrap;
+    width: 100%;
+    position: fixed;
+    top:50px;
+    left: 50px ;
+    z-index: 2;
+}
+
+div.number {
+    margin-bottom:100px;
+    width: 14.2857143%;
+    color: #FFFFFF;
+}
+
+div.contents {
+    display :flex;
+    flex-wrap :wrap;
+    width: 100%;
+    top:0px;
+    left: 50px ;
+}
+
+div.content {
+    margin-bottom:100px;
+    width: 16.6666667%;
+    color: #FFFFFF;
+}
+
+div.minimap {
+    width:15%;
+    position: fixed;
+    bottom:10px;
+    right:10px;
+}
