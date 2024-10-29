@@ -1,13 +1,30 @@
+
+
+
 body {
     background-color: #0000AA;
+    font-family: "jura";
+    font-weight: regular;
+    color: white;
+    margin: 0px;
+}
+
+div.intro {
     font-family: "jura";
     font-weight: bold;
     color: white;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+}
 
+div.body {
+    background-color: #000000;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* IMAGES */
@@ -27,15 +44,15 @@ width: 100%;
 /* COLOUR */
 /* COLOUR */
 
-div.bluetext {
+div.blue {
     color: #0000AA;
 }
 
-div.redtext {
+div.red {
     color: #FF0000;
 }
 
-div.whitebg {
+div.white {
     color: #FFFFFF;
 }
 
@@ -47,27 +64,38 @@ div.whitebg {
     font-family: "jura";
 }
 
-div.vw {
-    font-size: vw10;
+div.extralargetext {
+    font-size: 128px;
+    line-height: 120px;
 }
 
 div.largetext {
-    font-size: 128px;
-    line-height: 120px;
+    font-size: 72px;
 }
 
 div.mediumtext {
     font-size: 24px;
 }
 
-div.sans {
-    font-family: Arial, Helvetica, sans-serif;
+
+/* PARAGRAPH */
+/* PARAGRAPH */
+
+/* text align */
+div.textright {
+    text-align: right;
 }
 
-/* PARAGRAPH */
-/* PARAGRAPH */
+div.textmiddle {
+    text-align: center;
+}
 
 /* padding */
+
+div.pb25 {
+    padding-bottom: 25px;
+}
+
 div.pb50 {
     padding-bottom: 50px;
 }
@@ -76,9 +104,42 @@ div.pb100 {
     padding-bottom: 100px;
 }
 
+div.pl50 {
+    padding-left: 50px;
+}
+
 div.plauto {
     padding-left: auto;
 }
+
+div.pl100 {
+    padding-left: 100px;
+}
+
+div.pl1 {
+    padding-left: 10%;
+}
+
+div.pr50 {
+    padding-right:50px;
+}
+
+div.pr150 {
+    padding-right: 150px;
+}
+
+div.prauto {
+    padding-right: auto;
+}
+
+div.pt50 {
+    padding-top: 50px;
+}
+
+div.pt100 {
+    padding-top: 100px;
+}
+
 
 /* margin */
 div.mb50 {
@@ -87,6 +148,10 @@ div.mb50 {
 
 div.mb100 {
     margin-bottom: 100px;
+}
+
+div.mr50 {
+    margin-right: 50px;
 }
 
 div.mr100 {
@@ -100,6 +165,10 @@ div.mm {
 
 div.mr {
     margin-right:auto;
+}
+
+div.ml50 {
+    margin-left: 50px;
 }
 
 div.ml {
@@ -122,10 +191,6 @@ div.ml4 {
     margin-left:66.6666667%;
 }
 
-/* text align */
-div.textright {
-    text-align: right;
-}
 
 /* width */
 div.width1 {
@@ -158,15 +223,45 @@ div.container {
     flex-wrap: wrap;
 }
 
+/* BOX */
+/* BOX */
+
+div.box {
+    border: 1px #39FF14;
+    border-style: solid;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+div.box2 {
+    border: 1px #ffffff;
+    border-style: solid;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 /* Background */
 /* Background */
 
 div.banner {
-    background-image: url(Images/radar.png) ;
-    background-color: #FF0000;
-    background-position: ;
-    background-repeat: ;
-    height :400px;
+    background-image: url(Images2/neon\ globe.png) ;
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 750px;
+}
+
+div.bg {
+    background-color: black;
+    width: 100%;
+    height: 600px;
 }
 
 div.nav {
@@ -207,7 +302,7 @@ div.coloreffect {
 }
 
 div.moveleft {
-    animation:moveleft 5s alternate linear;
+    animation:moveleft 1.5s alternate linear;
 }
 
 @keyframes moveright {
@@ -220,7 +315,7 @@ div.moveleft {
 }
 
 div.moveright {
-    animation:moveright 5s alternate linear ;
+    animation:moveright 1.5s alternate linear ;
 }
 
 /* NUMBERS */
