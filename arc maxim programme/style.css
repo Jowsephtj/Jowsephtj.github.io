@@ -281,10 +281,10 @@ div.nav {
         color:red;
     }
     50% {
-        color: blue;
+        color: lime;
     }
     100% {
-        color: lime;
+        color: white;
     }
 }
 
@@ -315,7 +315,7 @@ div.moveleft {
 }
 
 div.moveright {
-    animation:moveright 1.5s alternate linear ;
+    animation:moveright 7s alternate linear ;
 }
 
 /* NUMBERS */
